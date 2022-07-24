@@ -1,23 +1,34 @@
 {
-    "name": "8200-nodejs-demoapp",
-    "version": "1.0.0",
-    "description": "nodejs demo app",
-    "main": "server.js",
-    "scripts": {
-      "test": "jest",
-      "build": "pack-zip",
-      "start": "node server.js"
-    },
-    "author": "Leon Jalfon",
-    "license": "MIT",
-    "dependencies": {
-      "express": "^4.18.1",
-      "fs": "0.0.1-security",
-    "jest":   "28.1.1",
-      "pack-zip": "^0.2.2",
-      "axios": "^0.27.2"
-    },
-    "devDependencies": {
-      "pack-zip": "^0.2.2"
-    }
-  }
+  "name": "dev8200",
+  "version": "1.0.0",
+  "description": "nodejs demo app",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "build": "pack-zip",
+    "start": "node server.js"
+  },
+  "author": "Leon Jalfon",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "fs": "0.0.1-security",
+    "jest": "28.1.1",
+    "pack-zip": "^0.2.2",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "pack-zip": "^0.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalMalchi/8200-node-app.git"
+  },
+  "keywords": [
+    "good"
+  ],
+  "bugs": {
+    "url": "https://github.com/TalMalchi/8200-node-app/issues"
+  },
+  "homepage": "https://github.com/TalMalchi/8200-node-app#readme"
+}
