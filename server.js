@@ -3,8 +3,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const primes = require('./primes.js');
+const squareRoot = require('./squareroot.js');
+const evenNum = require('./iseven.js');
 const fs = require('fs');
-const squareRoot = require('./square_root.js');
 
 app.get('/', function(req, res){
 	fs.readFile('index.html', function(err, data) {
@@ -19,7 +20,11 @@ app.get('/isPrime/:number', function(req, res){
 })
 
 app.get('/squareRoot/:number', function(req, res){
-    res.status(200).send(square_root.squareRoot(req.params.number));
+    res.status(200).send(squareRoot.squareRoot(req.params.number));
+})
+
+app.get('/iseven/:number', function(req, res){
+    res.status(200).send(evenNum.iseven(req.params.number));
 })
 
 exports.stop = function(){
