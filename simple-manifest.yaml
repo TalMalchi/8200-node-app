@@ -1,0 +1,10 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: 8200-node-app
+  namespace: accelerator-system
+spec:
+  git:
+    url: https://github.com/TalMalchi/8200-node-app.git
+    ref:
+      branch: main
